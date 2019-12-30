@@ -1,0 +1,57 @@
+{
+  "name": "node_jest",
+  "version": "1.0.0",
+  "description": "Exemplos do uso do JEST",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --expand --detect-open-handles",
+    "test:watch": "jest --expand --detect-open-handles --only-changed --watch",
+    "test:watch-all": "jest --expand --detect-open-handles --watch-all",
+    "lint": "eslint ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test && npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViniciusSabino/node-jest.git"
+  },
+  "author": {
+    "name": "Vinícius Rocha",
+    "email": "vnc.chelsea@gmail.com",
+    "url": "https://github.com/ViniciusSabino"
+  },
+  "keywords": [
+    "jest",
+    "unit-test",
+    "node",
+    "mock",
+    "mocking"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViniciusSabino/node-jest/issues"
+  },
+  "homepage": "https://github.com/ViniciusSabino/node-jest#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/register": "^7.7.7",
+    "@types/jest": "^24.0.25",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jest": "^23.2.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1"
+  }
+}
